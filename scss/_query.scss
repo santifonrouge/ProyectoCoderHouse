@@ -1,0 +1,23 @@
+@media(max-width:850px){
+    .mapa{
+        margin: 20px;
+    }
+}
+
+@media(max-width:800px){
+    .piePagina{
+        grid-template-columns: 1fr 1fr;
+    }
+    .piePagina .redes{
+        grid-column: 1/3;
+    }
+}
+
+@media(max-width:600px){
+    .piePagina{
+        grid-template-columns: 1fr;
+    }
+    .piePagina .redes{
+        grid-column: auto;
+    }
+}
