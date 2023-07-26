@@ -8,7 +8,7 @@
 }
 
 .nav-custom {
-  background-color: #ffecad;
+  background-color: #fdf5d6;
 }
 
 .carrito {
@@ -128,13 +128,13 @@ header h1 {
 }
 
 body {
-  background-color: #ffecad; /* Cambia el color de fondo según tus preferencias */
+  background-color: #fdf5d6;
 }
 
 .piePagina {
   display: grid;
   grid-template-columns: 2fr 2fr 1fr;
-  background-color: #ffe8bd;
+  background-color: #fae5bf;
   column-gap: 15px;
   padding: 10px;
   align-items: center;
