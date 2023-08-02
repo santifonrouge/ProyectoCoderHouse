@@ -12,9 +12,8 @@
 }
 
 .carrito {
-  font-size: 24px; /* Tamaño del ícono */
-  color: #333; /* Color del ícono */
-  /* Agrega cualquier otro estilo que desees para el ícono del carrito */
+  font-size: 24px;
+  color: #333;
 }
 
 header {
@@ -96,20 +95,16 @@ header h1 {
   justify-content: center;
   height: 300px;
   color: #ffffff;
-  text-shadow: 2px 2px 4px #000000;
+  text-shadow: 3px 3px 4px #000000;
 }
-.portada-ofertas h1 {
-  font-size: 40px;
+.portada-ofertas h2 {
+  font-size: 50px;
   margin-bottom: 20px;
 }
 .portada-ofertas form {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-.portada-ofertas label {
-  font-size: 18px;
-  margin-bottom: 10px;
 }
 .portada-ofertas input[type=email] {
   padding: 8px;
@@ -125,6 +120,9 @@ header h1 {
   font-size: 18px;
   cursor: pointer;
   border-radius: 5px;
+}
+.portada-ofertas button:hover {
+  background-color: #fdf5d6;
 }
 
 body {
@@ -234,11 +232,18 @@ body {
   padding: 10px;
 }
 
-@media (max-width: 768px) {
+/* Agrego margen al mapa en sus costados*/
+@media (max-width: 850px) {
   .mapa {
     margin: 20px;
   }
 }
+@media (max-width: 530px) {
+  .imagenesAnimadas {
+    margin: 20px;
+  }
+}
+/* Footer responsive*/
 @media (max-width: 768px) {
   .piePagina {
     grid-template-columns: 1fr 1fr;
@@ -247,12 +252,26 @@ body {
     grid-column: 1/3;
   }
 }
-@media (max-width: 576px) {
-  .piePagina {
-    grid-template-columns: 1fr;
+/* Formulario y Mapa de página Contactos al lado*/
+@media (min-width: 950px) {
+  .contenedorContacto {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
   }
-  .piePagina .redes {
-    grid-column: auto;
+  .formulario {
+    flex: 1; /* Ocupa la mitad del ancho disponible */
+    max-width: 50%;
+  }
+  .mapa {
+    flex: 1; /* Ocupa la mitad del ancho disponible */
+    max-width: 50%;
+  }
+}
+/* Disminución altura del carrusel para mobile */
+@media screen and (max-width: 768px) {
+  .carousel .carousel-item img {
+    height: 400px;
   }
 }
 .imagenesAnimadas {
