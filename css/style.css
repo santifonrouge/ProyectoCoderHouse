@@ -81,7 +81,7 @@ header h1 {
 .tarjeta .tarjeta_img {
   width: 100%;
   height: auto;
-  max-height: 200px;
+  max-height: 240px;
   object-fit: cover;
   border-radius: 5px;
 }
